@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almond Vista</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wave">
+
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Products.html">Products</a></li>
+                <li><a href="Service.html">Service</a></li>
+                <li><a href="FAQ.html">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <img src="logo.jpg" alt="Logo" class="logo">
+
+        <div class="main-content">
+            <div class="image-almond">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="almond1.jpg" alt="Almond Image 1"></div>
+                        <div class="swiper-slide"><img src="almond2.jpg" alt="Almond Image 2"></div>
+                        <div class="swiper-slide"><img src="almond3.jpg" alt="Almond Image 3"></div>
+                    </div>
+
+                    <!-- Swiper Navigation Buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <div class="main-text">
+                <h1>Almond Vista</h1>
+                <p>Discover the benefits of almonds with our premium selection. From health benefits to delicious recipes, explore everything you need to know about almonds.</p>
+                <a href="learn-more.html" class="learn-more-button"><button>Learn More</button></a>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <div class="image">
+                    <img src="organic.jpg" alt="Organic Image">
+                </div>
+                <div class="inner-box">
+                    <h3>100% Organic</h3>
+                    <p>Our almonds are grown organically, ensuring the highest quality and sustainability.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="expense.jpg" alt="Affordable Image">
+                </div>
+                <div class="inner-box">
+                    <h3>Affordable Pricing</h3>
+                    <p>Enjoy premium almonds at prices that won’t break the bank. Quality and affordability combined.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="healthy.jpg" alt="Healthy Image">
+                </div>
+                <div class="inner-box">
+                    <h3>Health Benefits</h3>
+                    <p>Almonds are packed with nutrients and offer numerous health benefits. Learn more about their advantages.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+            <!-- New Almond Types Section -->
+            <div class="types-section">
+                <h2>Our Almond Selection</h2>
+                <div class="almond-types">
+                    <div class="type-box">
+                        <img src="nonpareil.jpg" alt="Type 1">
+                        <h3>Organic Nonpareil Almonds</h3>
+                        <p>Organic Nonpareil almonds are renowned for their mild, sweet, and buttery flavor. 
+                            They have a smooth and slightly crunchy texture, which makes them a versatile choice for various uses.
+                             These almonds are commonly used in snacking, baking, and garnishing due to their delicate flavor and attractive appearance. 
+                            They are often favored for their consistent quality and easy adaptability to different recipes.</p>
+                    </div>
+                    <div class="type-box">
+                        <img src="carmel.jpg" alt="Type 2">
+                        <h3>Organic Carmel Almonds</h3>
+                        <p>Organic Carmel almonds offer a slightly sweet and mildly nutty flavor, paired with a firm and crunchy texture. 
+                            This makes them an excellent choice for roasting and baking, as their robust texture holds up well in various culinary applications. 
+                            They are also used in confections and snacks, providing a satisfying crunch and a subtle sweetness that enhances both savory and sweet dishes.</p>
+                    </div>
+                    <div class="type-box">
+                        <img src="butte.jpg" alt="Type 3">
+                        <h3>Organic Butte Almonds</h3>
+                        <p>Organic Butte almonds are characterized by their rich, sweet taste with a hint of bitterness.
+                             Their crunchy and firm texture makes them ideal for snacking and for use in almond butter. 
+                             The slightly bitter undertone balances their sweetness, offering a complex flavor profile that complements both sweet and savory recipes.</p>
+                    </div>
+                </div>
+            </div>
+       
+            <footer id="contact" class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Have any questions? We'd love to hear from you!</p>
+                <ul>
+                    <li><i class="fas fa-phone"></i> Phone: +91-8793432198</li>
+                    <li><i class="fas fa-envelope"></i> Email: info@almondvista.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Address: 123 Almond Lane, Bangalore, 560112</li>
+                </ul>
+                <p>Follow us on social media for the latest updates!</p><br>
+                <div class="social-media">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+    
+            </footer>
+            
+        </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,276 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(to right, #c07b20 70%, #d4b380 30%);
+    position: relative;
+    overflow: hidden;
+    padding-top: 220px; 
+    
+    
+}
+.wave {
+    position: absolute;
+    top: 10;
+    bottom: 10;
+    right: 30%;
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c07b20;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px; 
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;  
+}
+nav ul li{
+    margin:0 5px;
+}
+nav ul a{
+    text-decoration: none;
+    padding: 0.3rem 1.3rem;
+    font-size: 17px;
+    font-weight: bold;
+    color: #494234;
+    position: relative;
+    z-index: 1;
+}
+nav ul a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0px;
+    border-radius: 20px;
+    background-color: #ebc685;
+    z-index: -1;
+    transition: width 0.5s, transform 0.2s;
+}
+nav ul a:hover:after{
+    width: 100%;
+}
+.main-content {
+    width: 60%;
+    padding-top: 100px;
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.logo {
+    position: absolute;
+    top: 80px; 
+    width: 250px; 
+    right:8%
+}
+.image-almond ,.main-text{
+    flex-basis: 50%;
+}
+.image-almond img{
+    width: 100%;
+}
+.main-content h1 {
+    font-size: 60px;
+    letter-spacing: 1px;
+    padding-right: 100px;
+    color: #494234;
+}
+.main-content p{
+    margin-top: 10px;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+}
+.main-content button{
+    margin-top: 2.5rem;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 0.5rem 2.5rem 0.5rem 1rem;
+    border-radius: 0 50% 50% 0;
+    background-color: #494234;
+    color: white;
+    cursor: pointer;
+}
+.swiper{
+    width: 20rem;
+}
+.swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    position: absolute;
+    right: 3%;
+    bottom: 30%;
+    transform: translateX(10%);
+    max-width: 400px 
+    
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem; 
+    margin-right: 1rem; 
+    max-width: 600px;
+}
+
+.right .box .image img{
+    width: 70%;
+}
+
+.image {
+    margin-top: 2rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: -5px 5px 17px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+
+.image:hover{
+    background-color: rgba(73,66,52,0.7);
+}
+.box .inner-box{
+    margin: 1.5rem 0 0 1rem;
+}
+.box .inner-box p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.types-section {
+    padding: 5rem 0;
+    background-color: #cea86f;
+    text-align: center;
+}
+
+.types-section h2 {
+    font-size: 2.5rem;
+    color: #494234;
+    margin-bottom: 3rem;
+}
+
+.almond-types {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.type-box {
+    background-color: #eca9a9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    width: 25%;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+
+}
+
+.type-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.type-box h3 {
+    font-size: 1.5rem;
+    color: #494234;
+    margin-top: 1rem;
+}
+
+.type-box p {
+    font-size: 1rem;
+    color: #70634c;
+    margin-top: 0.5rem;
+}
+
+.type-box:hover {
+    transform: translateY(-10px);
+}
+
+.contact-info {
+    background-color: #dcb887 !important; 
+    padding: 2rem;
+    text-align: center;
+    color: #494234;
+    border-top: 3px solid #c07b20;
+}
+
+.contact-info h2 {
+    font-size: 28px;
+    margin-bottom: 1rem;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 18px;
+    margin-bottom: 0.5rem;
+}
+
+.contact-info ul li i {
+    margin-right: 10px;
+    color: #c07b20;
+}
+
+.contact-info p:last-of-type {
+    margin-top: 2rem;
+    font-size: 16px;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-media i:hover {
+    color: #007bff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
